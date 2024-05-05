@@ -59,7 +59,7 @@ class FileStorage:
                 jo = json.load(f)
             for key in jo:
                 self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except:
+        except Exception:
             pass
 
     def delete(self, obj=None):
@@ -75,6 +75,7 @@ class FileStorage:
 
     def get(self, cls, id):
         """
+<<<<<<< HEAD
         Returns the object based on the class name and its ID, or
         None if not found
         """
@@ -102,3 +103,28 @@ class FileStorage:
             count = len(models.storage.all(cls).values())
 
         return count
+=======
+        Retrieves object of a class or all objects of that class
+        """
+        if id and isinstance(id, str):
+            if cls and (cls in classes.keys() or cls in classes.values()):
+                all_objs = self.all(cls)
+                for key, value in all_objs.items():
+                    if id == value.id and key.split('.')[1] == id:
+                        return value
+        return
+
+    def count(self, cls=None):
+        """
+        Returns the occurrence of a class or all classes
+        """
+        occurrence = 0
+        if cls:
+            if cls in classes.keys() or cls in classes.values():
+                occurrence = len(self.all(cls))
+            else:
+                return occurrence
+        if not cls:
+            occurrence = len(self.all())
+        return occurrence
+>>>>>>> 09f3fc3aa0294e193ed76b8c6de9d1056e1c3893
