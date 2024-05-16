@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 app.register_blueprint(app_views)
 
+
 @app.teardown_appcontext
 def teardown_engine(exception):
     """
@@ -27,8 +28,9 @@ def not_found(error):
     response = {"error": "Not found"}
     return jsonify(response), 404
 
+
 if __name__ == '__main__':
     Host = getenv('HBNB_API_HOST', '0.0.0.0')
     PORT = int(getenv('HBNB_API_PORT', 5000))
     app.run(host=Host, port=PORT, threaded=True)
-    app.run(debug = True, host=Host, port=PORT, threaded=True)
+    app.run(debug=True, host=Host, port=PORT, threaded=True)
