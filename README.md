@@ -159,7 +159,7 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-Kufre Akpan - [Github] (https://github.com/zaapmart)
+Kufre Akpan - [Github] (https://github.com/zaapmart) / [Twitter] (https://twitter.com/Kufre_Akpan1)
 =======
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 Kufre Akpan - [Github](https://github.com/zaapmart) / [Twitter] (https://twitter.com/Kufre_Akpan1)
